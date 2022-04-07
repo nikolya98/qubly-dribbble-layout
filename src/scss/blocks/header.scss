@@ -1,0 +1,49 @@
+.header {
+  padding-top: 24px;
+}
+
+.navigation {
+  // .navigation__list
+  &__list {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 40px;
+  }
+
+  // .navigation__link
+  &__link {
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:focus {
+      color: $accent;
+    }
+  }
+
+  // .navigation__button
+  &__button {
+    display: inline-block;
+    padding: 6px 35px;
+    border: 1px solid $accent;
+    border-radius: 20px;
+    color: $accent;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: #fff;
+      background-color: $accent;
+    }
+  }
+}
+
+.logo {
+  display: block;
+  width: 48px;
+  height: 48px;
+}

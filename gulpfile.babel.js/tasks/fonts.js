@@ -8,7 +8,7 @@ import { path } from "../../config/path";
 const fonts = () => {
   return src(path.src.fonts)
     .pipe(newer(path.build.fonts))
-    .pipe(fonter({ formats: ["woff", "ttf", "svg", "eot"] }))
+    .pipe(fonter({ formats: ["woff", "ttf", "svg", "eot", "otf"] }))
     .pipe(dest(path.build.fonts))
     .pipe(ttf2woff2())
     .pipe(dest(path.build.fonts));
