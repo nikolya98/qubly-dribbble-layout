@@ -1,0 +1,57 @@
+.background-hero {
+  background: url(../../images/hero/background.svg) center bottom / cover
+    no-repeat;
+}
+
+.hero {
+  padding: 95px 0 250px;
+
+  // .hero__text
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 55px;
+  }
+
+  // .hero__title
+  &__title {
+    max-width: 435px;
+    margin-bottom: 14px;
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  // .hero__label
+  &__label {
+    order: -1;
+    margin-bottom: 2px;
+
+    &::before {
+      content: url("../../images/hero/brightness-icon.svg");
+      position: absolute;
+      top: 50%;
+      left: 16px;
+      width: 16px;
+      height: 16px;
+      transform: translateY(-50%);
+    }
+  }
+
+  // .hero__description
+  &__description {
+    margin-bottom: 50px;
+  }
+
+  // .hero__buttons
+  &__buttons {
+    display: flex;
+    gap: 16px;
+  }
+
+  // .hero__image
+  &__image {
+    width: 492px;
+    height: 386px;
+  }
+}

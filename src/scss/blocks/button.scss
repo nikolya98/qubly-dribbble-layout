@@ -1,0 +1,28 @@
+.button {
+  display: inline-block;
+  padding: 15px 40px;
+  border-radius: 25px;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration: none;
+  color: $white;
+  background-color: $accent;
+  box-shadow: 0 0 2px rgba($color: $black, $alpha: 0.16);
+
+  &:hover,
+  &:focus {
+    color: $accent;
+    background-color: #d3adf7;
+  }
+}
+
+.button--white {
+  color: $black;
+  background-color: $white;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+    background-color: $accent-light;
+  }
+}

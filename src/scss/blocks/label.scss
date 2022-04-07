@@ -1,0 +1,17 @@
+.label {
+  position: relative;
+  padding: 10px 37px;
+  border-radius: 25px;
+  color: $accent;
+  background-color: $accent-light;
+  // .label__link
+  &__link {
+    color: inherit;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:focus {
+      color: #ffa39e;
+    }
+  }
+}

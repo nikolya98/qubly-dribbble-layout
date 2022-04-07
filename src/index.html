@@ -26,45 +26,77 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <nav class="navigation">
-          <div class="row">
-            <div class="col-1 offset-1">
-              <a class="logo" href="/">
-                <img
-                  src="images/header/logo.svg"
-                  alt="Logo icon"
-                  width="48"
-                  height="48"
-                />
-              </a>
+    <div class="background-hero">
+      <header class="header">
+        <div class="container">
+          <nav class="navigation">
+            <div class="row">
+              <div class="col-1 offset-1">
+                <a class="logo" href="/">
+                  <img
+                    src="images/header/logo.svg"
+                    alt="Logo icon"
+                    width="48"
+                    height="48"
+                  />
+                </a>
+              </div>
+              <div class="col-9">
+                <ul class="navigation__list">
+                  <li>
+                    <a class="navigation__link" href="#">About</a>
+                  </li>
+                  <li>
+                    <a class="navigation__link" href="#">Pricing</a>
+                  </li>
+                  <li>
+                    <a class="navigation__link" href="#">Contact Us</a>
+                  </li>
+                  <li>
+                    <a class="navigation__link" href="#">Login</a>
+                  </li>
+                  <li>
+                    <a class="navigation__link navigation__button" href="#">
+                      Get started
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="col-9">
-              <ul class="navigation__list">
-                <li>
-                  <a class="navigation__link" href="#">About</a>
-                </li>
-                <li>
-                  <a class="navigation__link" href="#">Pricing</a>
-                </li>
-                <li>
-                  <a class="navigation__link" href="#">Contact Us</a>
-                </li>
-                <li>
-                  <a class="navigation__link" href="#">Login</a>
-                </li>
-                <li>
-                  <a class="navigation__link navigation__button" href="#">
-                    Get started
-                  </a>
-                </li>
-              </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-5 offset-1">
+              <div class="hero__text">
+                <h2 class="title hero__title">
+                  Your data with real-time analytics
+                </h2>
+                <p class="label hero__label">
+                  v3.1 released.
+                  <a class="label__link" href="#">Learn more</a>
+                </p>
+                <p class="hero__description">
+                  Harness the potential of Big Data Analytics & Cloud Services
+                  and become a data-driven organization with Needle tail
+                </p>
+                <div class="hero__buttons">
+                  <a class="button" href="#">Start free trial</a>
+                  <a class="button button--white" href="#">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="hero__image">
+                <img src="images/hero/techno.png" alt="Hero image" />
+              </div>
             </div>
           </div>
-        </nav>
-      </div>
-    </header>
+        </div>
+      </section>
+    </div>
     <script src="js/main.min.js"></script>
   </body>
 </html>
