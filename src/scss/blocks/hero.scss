@@ -6,8 +6,8 @@
 .hero {
   padding: 95px 0 250px;
 
-  // .hero__text
-  &__text {
+  // .hero__wrapper
+  &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -25,6 +25,7 @@
   // .hero__label
   &__label {
     order: -1;
+    padding-left: 37px;
     margin-bottom: 2px;
 
     &::before {

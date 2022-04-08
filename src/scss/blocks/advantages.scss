@@ -1,0 +1,62 @@
+.advantages {
+  padding: 93px 0 107px;
+
+  // .advantages__wrapper
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // .advantages__title
+  &__title {
+    max-width: 500px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  // .advantages__label
+  &__label {
+    order: -1;
+    padding-left: 45px;
+    margin-bottom: 32px;
+
+    &::before {
+      content: url("../../images/advantages/eye-icon.svg");
+      position: absolute;
+      top: 50%;
+      left: 16px;
+      width: 16px;
+      height: 16px;
+      transform: translateY(-50%);
+    }
+  }
+
+  // .advantages__description
+  &__description {
+    max-width: 500px;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+
+  // .advantages__item
+  &__item {
+    max-width: 230px;
+    margin: 0 65px;
+  }
+
+  // .advantages__icon
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+  }
+
+  // .advantages__item-title
+  &__item-title {
+    margin-bottom: 16px;
+    font-size: 21px;
+    line-height: 27px;
+  }
+}
