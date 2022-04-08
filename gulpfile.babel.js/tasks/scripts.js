@@ -5,7 +5,7 @@ import concat from "gulp-concat";
 import { path } from "../../config/path";
 
 const script = () => {
-  return src([`../../node_modules/jquery/dist/jquery.js`, path.src.js], {
+  return src([path.src.jquery, path.src.js], {
     allowEmpty: true,
     sourcemaps: true,
   })

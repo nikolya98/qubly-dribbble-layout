@@ -1,5 +1,6 @@
 const SOURCE = `./src`;
 const DIST = `./dist`;
+const MODULES = "./node_modules";
 
 export const path = {
   root: {
@@ -19,6 +20,7 @@ export const path = {
     js: `${SOURCE}/js/main.js`,
     img: `${SOURCE}/images/**/*.{jpg,jpeg,png,gif,ico,svg,webp,avif,heif}`,
     fonts: `${SOURCE}/fonts/**/*.ttf`,
+    jquery: `${MODULES}/jquery/dist/jquery.js`,
   },
   watch: {
     html: `${SOURCE}/**/*.html`,
