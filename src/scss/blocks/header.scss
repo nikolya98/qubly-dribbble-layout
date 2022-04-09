@@ -24,6 +24,63 @@
     }
   }
 
+  // .navigation__submenu
+  &__submenu {
+    & > a {
+      position: relative;
+      z-index: 10;
+      padding-right: 16px;
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 9px;
+        height: 4px;
+        background: url("../../images/header/arrow-down.svg") center center /
+          cover no-repeat;
+        transform: translateY(-50%);
+      }
+
+      &:hover + ul {
+        display: block;
+      }
+    }
+  }
+
+  // .navigation__submenu-list
+  &__submenu-list {
+    display: none;
+    position: absolute;
+    padding: 20px 10px 10px;
+    cursor: default;
+    transform: translate(-10px, -5px);
+
+    &:hover {
+      display: block;
+    }
+  }
+
+  // .navigation__submenu-item
+  &__submenu-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  // .navigation__submenu-link
+  &__submenu-link {
+    font-size: 13px;
+    color: $black;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:focus {
+      color: $accent;
+    }
+  }
+
   // .navigation__button
   &__button {
     display: inline-block;
