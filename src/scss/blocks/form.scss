@@ -49,11 +49,11 @@
     color: $white;
     background-color: $accent;
     cursor: pointer;
-    transition: border-radius 0.2s ease-in;
 
     &:hover,
     &:focus {
-      border-radius: 25px;
+      color: $accent;
+      background-color: #d3adf7;
     }
   }
 

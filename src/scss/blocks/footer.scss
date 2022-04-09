@@ -1,0 +1,139 @@
+.footer {
+  background-color: #fbfcff;
+  color: $font-title;
+
+  // .footer__content
+  &__content {
+    padding: 60px 0 30px;
+  }
+
+  // .footer__logo
+  &__logo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+  }
+
+  // .footer__description
+  &__description {
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  // .footer__menu
+  &__menu {
+    padding-left: 35px;
+  }
+
+  // .footer__menu-title
+  &__menu-title {
+    margin-bottom: 21px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  // .footer__menu-list
+  &__menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  // .footer__menu-link
+  &__menu-link {
+    font-size: 12px;
+    line-height: 20px;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      color: #ffa39e;
+    }
+  }
+
+  // .footer__newsletter
+  &__newsletter {
+  }
+
+  // .footer__newsletter-title
+  &__newsletter-title {
+    margin-bottom: 21px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  // .footer__newsletter-form
+  &__newsletter-form {
+    position: relative;
+    padding: 12px;
+    padding-right: 35px;
+    background-color: $white;
+  }
+  // .footer__newsletter-email
+  &__newsletter-email {
+    width: 100%;
+    border: none;
+    font-size: 12px;
+    line-height: 20px;
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid $accent;
+    }
+  }
+
+  // .footer__newsletter-button
+  &__newsletter-button {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1) translateY(-50%);
+    }
+  }
+
+  // .footer__send-icon
+  &__send-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  // .footer__copy
+  &__copy {
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+
+  // .socials__icon
+  &__icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  // .socials__link
+  &__link {
+    display: inline-block;
+    transition: all 0.2s ease;
+
+    &:hover,
+    &:focus {
+      transform: translateY(-10%);
+    }
+  }
+}
