@@ -27,8 +27,10 @@
   // .slider__control-list
   &__control-list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    gap: 30px;
   }
 
   // .slider__control-item
@@ -70,15 +72,11 @@
 
   // .review__text
   &__text {
-    max-width: 700px;
-    max-height: 56px;
+    max-width: 75%;
     margin-bottom: 15px;
     font-size: 21px;
     line-height: 27px;
     text-align: center;
-    line-clamp: 2;
-    text-overflow: ellipsis;
-    overflow: hidden;
   }
 
   // .review__icon
@@ -93,5 +91,98 @@
     font-weight: 700;
     text-align: center;
     color: black;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .reviews {
+    padding: 280px 0;
+  }
+
+  .review {
+    &__text {
+      font-size: 19px;
+      line-height: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .reviews {
+    padding: 220px 0;
+  }
+
+  .review {
+    &__text {
+      font-size: 17px;
+      line-height: 23px;
+    }
+
+    &__icon {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  .slider {
+    &__list {
+      padding-bottom: 45px;
+      margin-bottom: 50px;
+    }
+
+    &__button {
+      max-width: 120px;
+      max-height: 35px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .reviews {
+    padding: 180px 0;
+  }
+
+  .review {
+    &__icon {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .slider {
+    &__list {
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+    }
+
+    &__button {
+      max-width: 110px;
+      max-height: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .reviews {
+    padding: 140px 0;
+  }
+
+  .review {
+    &__text {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+
+  .slider {
+    &__list {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+    }
+
+    &__button {
+      max-width: 100px;
+      max-height: 25px;
+    }
   }
 }

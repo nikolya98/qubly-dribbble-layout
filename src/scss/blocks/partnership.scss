@@ -60,3 +60,31 @@
     transform: translateY(-40px);
   }
 }
+
+@media only screen and (max-width: 991px) {
+  .partnership {
+    padding: 125px 0;
+    &__wrapper {
+      margin-bottom: 100px;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .partnership {
+    padding: 90px 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .partnership {
+    padding: 50px 0;
+
+    &__decoration {
+      padding: 0 20px;
+    }
+
+    &__member-list {
+      padding: 0;
+      row-gap: 40px;
+    }
+  }
+}

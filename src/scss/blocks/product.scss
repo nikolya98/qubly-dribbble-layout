@@ -3,8 +3,8 @@
 
   // .product__image
   &__image {
-    width: 376px;
-    height: 435px;
+    max-width: 376px;
+    max-height: 435px;
   }
 
   // .product__wrapper
@@ -26,13 +26,82 @@
     margin-bottom: 43px;
 
     &::before {
-      content: url("../../images/product/electronic-icon.svg");
+      content: "";
       position: absolute;
       top: 50%;
       left: 16px;
       width: 24px;
       height: 24px;
+      background: url("../../images/product/electronic-icon.svg") center / cover
+        no-repeat;
       transform: translateY(-50%);
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .product {
+    padding: 100px 0;
+
+    &__label {
+      padding-left: 45px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .product {
+    padding: 85px 0;
+
+    &__label {
+      padding-left: 40px;
+      margin-bottom: 30px;
+
+      &::before {
+        left: 12px;
+        width: 21px;
+        height: 21px;
+      }
+    }
+
+    &__image {
+      margin-left: auto;
+      max-width: 300px;
+      max-height: 360px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .product {
+    padding: 70px 0;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .product {
+    padding: 50px 0;
+
+    &__label {
+      padding-left: 38px;
+      margin-bottom: 25px;
+
+      &::before {
+        left: 12px;
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    &__columns {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &__wrapper {
+      margin-bottom: 20px;
     }
   }
 }

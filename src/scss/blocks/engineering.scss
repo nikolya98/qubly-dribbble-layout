@@ -20,19 +20,96 @@
     margin-bottom: 32px;
 
     &::before {
-      content: url("../../images/engineering/compass.svg");
+      content: "";
       position: absolute;
       top: 50%;
       left: 16px;
       width: 24px;
       height: 24px;
+      background: url("../../images/engineering/compass.svg") center / cover
+        no-repeat;
       transform: translateY(-50%);
     }
   }
 
   // .engineering__image
-  /*   &__image {
-    width: 684px;
-    height: 414px;
-  } */
+  &__image {
+    max-width: 684px;
+    max-height: 414px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .engineering {
+    padding: 115px 0 50px;
+
+    &__label {
+      padding-left: 45px;
+      margin-bottom: 30px;
+
+      &::before {
+        left: 14px;
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .engineering {
+    padding: 90px 0 50px;
+
+    &__label {
+      padding-left: 45px;
+      margin-bottom: 25px;
+
+      &::before {
+        left: 14px;
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .engineering {
+    padding: 70px 0 50px;
+
+    &__label {
+      padding-left: 40px;
+      margin-bottom: 25px;
+
+      &::before {
+        left: 12px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 575px) {
+  .engineering {
+    padding: 50px 0;
+
+    &__label {
+      padding-left: 35px;
+      margin-bottom: 20px;
+
+      &::before {
+        left: 12px;
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    &__image {
+      max-width: 330px;
+      max-height: 200px;
+      margin-left: auto;
+    }
+
+    &__wrapper {
+      margin-bottom: 20px;
+    }
+  }
 }
