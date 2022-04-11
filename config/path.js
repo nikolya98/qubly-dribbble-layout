@@ -20,7 +20,10 @@ export const path = {
     js: `${SOURCE}/js/main.js`,
     img: `${SOURCE}/images/**/*.{jpg,jpeg,png,gif,ico,svg,webp,avif,heif}`,
     fonts: `${SOURCE}/fonts/**/*.ttf`,
+  },
+  plugins: {
     jquery: `${MODULES}/jquery/dist/jquery.js`,
+    wow: `${MODULES}/wow.js/dist/wow.js`,
   },
   watch: {
     html: `${SOURCE}/**/*.html`,

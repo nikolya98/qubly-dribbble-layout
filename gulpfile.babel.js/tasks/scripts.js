@@ -5,7 +5,7 @@ import concat from "gulp-concat";
 import { path } from "../../config/path";
 
 const script = () => {
-  return src([path.src.jquery, path.src.js], {
+  return src([path.plugins.jquery, path.plugins.wow, path.src.js], {
     allowEmpty: true,
     sourcemaps: true,
   })

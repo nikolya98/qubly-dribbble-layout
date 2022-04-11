@@ -1,0 +1,12 @@
+@keyframes trembling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+.animated-image {
+  animation: trembling 2s ease 1.5s infinite alternate;
+}
