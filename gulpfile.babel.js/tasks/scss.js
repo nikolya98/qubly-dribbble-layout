@@ -26,7 +26,9 @@ const processScss = () => {
           cascade: true,
           grid: "autoplace",
           // TODO: set up condition for development or peoduction
-          overrideBrowserslist: ["last 2 versions"],
+          overrideBrowserslist: [
+            "> 0.5%, last 2 versions, Firefox ESR, not dead",
+          ],
         })
       )
       .pipe(cleanCss())
